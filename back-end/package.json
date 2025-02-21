@@ -1,5 +1,5 @@
 {
-  "name": "coche-concesionario",
+  "name": "back-end",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,7 @@
     "supertest": "^7.0.0"
   },
   "dependencies": {
-    "coche-concesionario": "file:",
-    "Coche-Concesionario": "file:",
+    "back-end": "file:",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.7",
