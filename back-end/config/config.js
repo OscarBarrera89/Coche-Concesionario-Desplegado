@@ -6,11 +6,11 @@ require('dotenv').config({
 module.exports = {
 port: process.env.PORT || 80,
 db: {
-  host: process.env.DB_HOST || "switchback.proxy.rlwy.net",
+  host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "xlPQUuhLrqywEvFuPSsLGFLedRvQNpQz",
+  password: process.env.DB_PASSWORD || "test",
   name: process.env.DB_NAME || "ventaCoches",
-  port: process.env.DB_PORT || 25751,
+  port: process.env.DB_PORT || 3306,
 },
 secretKey: process.env.SECRET_KEY || "default_secret",
 };
