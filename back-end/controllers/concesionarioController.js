@@ -1,17 +1,18 @@
 // Recuperar función de inicialización de modelos
-const initModels = require("../models/init-models").initModels;
+const initModels = require("../models/init-models.js").initModels;
 // Crear la instancia de sequelize con la conexión a la base de datos
 const sequelize = require('../config/sequelize.js');
 // Función de logging
 const { logMensaje } = require("../utils/logger.js");
 // Método de creación de objetos de respuesta
-const Respuesta = require('../utils/respuesta');
+const Respuesta = require('../utils/respuesta.js');
 
 // Cargar las definiciones del modelo en sequelize
 logMensaje(initModels);
 const models = initModels(sequelize);
 
 const Concesionario = models.concesionario;
+
 
 exports.getConcesionarios = async (req, res) => {
   try {
